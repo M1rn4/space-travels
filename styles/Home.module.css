@@ -11,6 +11,125 @@
   justify-content: center;
   align-items: center;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  #eaeaea;
+  padding: 2rem;
+
+  position: fixed;
+  width: 96%;
+  top: 0;
+
+}
+
+.navbarList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbarListItem {
+  margin-left: 1rem;
+}
+
+.navbarListItem a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbarListItem a:hover {
+  color: #00bfff;
+  border-bottom: 1px solid #00bfff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 72vh;
+  background-image: url('/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #3f5ad1;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.hero button {
+  margin-top: 3rem;
+}
+
+.aboutSection {
+  padding: 5rem 0;
+  height: 80vh;
+  width: 80vw;
+}
+
+.aboutSection h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.aboutSection p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.missionsSection {
+  padding: 5rem 0;
+  height: 90vh;
+  width: 80vw;
+}
+
+.missionsSection h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.missionsSection p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.newsSection {
+  padding: 2rem 0;
+  height: 90vh;
+  width: 80vw;
+}
+
+.newsSection h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.newsSection p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
 
 .footer {
   display: flex;
@@ -19,6 +138,11 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
 }
 
 .footer a {
@@ -28,6 +152,29 @@
   flex-grow: 1;
 }
 
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .footer li:not(:last-child) {
+  margin-right: 1.5rem;
+  }
+  
+  .footer a {
+  color: #333;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  }
+  
+  .footer a:hover {
+  color: #0d76fc;
+  }
 .title a {
   color: #0d76fc;
   text-decoration: none;
