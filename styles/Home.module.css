@@ -1,5 +1,12 @@
+
 .container {
   padding: 0 2rem;
+  /* background-image: url('../pages/images/8.png'); */
+  background-color: #333;
+  background-size: 100vw 100vh;
+  background-position: right top;
+  color: #ffffff
+  
 }
 
 .main {
@@ -10,17 +17,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  color: #ffffff
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:  #eaeaea;
   padding: 2rem;
-
   position: fixed;
-  width: 96%;
+  width: 100%;
   top: 0;
+  right: 0;
 
 }
 
@@ -38,7 +47,6 @@
 }
 
 .navbarListItem a {
-  color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
 }
@@ -53,13 +61,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 72vh;
-  background-image: url('/images/hero.jpg');
-  background-size: cover;
+  height: 100vh;
+  width: 80vw;
   background-position: center;
-  color: #3f5ad1;
   text-align: center;
 }
+
 
 .hero h1 {
   font-size: 6rem;
@@ -77,9 +84,10 @@
 }
 
 .aboutSection {
-  padding: 5rem 0;
-  height: 80vh;
-  width: 80vw;
+  padding: 7rem 0;
+  height: 100vh;
+  width: 40vw;
+
 }
 
 .aboutSection h2 {
@@ -95,9 +103,9 @@
 }
 
 .missionsSection {
-  padding: 5rem 0;
-  height: 90vh;
-  width: 80vw;
+  padding: 7rem 0;
+  height: 100vh;
+  width: 40vw;
 }
 
 .missionsSection h2 {
@@ -113,9 +121,9 @@
 }
 
 .newsSection {
-  padding: 2rem 0;
+  padding: 7rem 0;
   height: 90vh;
-  width: 80vw;
+  width: 40vw;
 }
 
 .newsSection h2 {
@@ -135,14 +143,12 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
 }
 
 .footer a {
@@ -166,7 +172,7 @@
   }
   
   .footer a {
-  color: #333;
+  color: #ffffff;
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
@@ -242,8 +248,259 @@
 }
 
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .conteiner{margin: 0;
+    background-image: url('../pages/images/10.png');
+    background-position: right;}
+  .main {
+    margin: 0;
   }
+  .hero {
+    height: 100vh;
+  }
+  .hero h1{
+    font-size: 2rem;
+  }
+  .aboutSection {
+    padding-top: 7rem;
+    height: 100vh;
+  }
+  .aboutSection h2 {
+    font-size: 1em;
+  }
+  .aboutSection p {
+    font-size: .8rem;
+  }
+  .missionsSection {
+    height: 100vh;
+    padding-top: 7rem;
+  }
+  .missionsSection h2 {
+    font-size: 1rem;
+  }
+  .missionsSection p {
+    font-size: .8rem;
+  }
+  .newsSection {
+    height: 100vh;
+    padding-top: 7rem;
+  }
+  .newsSection h2 {
+    font-size: 1rem;
+  }
+  .newsSection p {
+    font-size: .8rem;
+  }
+
+}
+
+#flex {
+  display: flex;
+}
+
+.nav {
+  padding-left: 10%;
+  padding-right: 15%;
+  align-items: center;
+  height: 12vh;
+  border-bottom: 2px solid rgb(186, 185, 185);
+  justify-content: space-between;
+}
+
+.navtitle {
+  font-size: 30px;
+}
+
+.navleft {
+  gap: 15px;
+  align-items: center;
+}
+
+.navlist {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 20px;
+  gap: 15px;
+}
+
+.vert-div {
+  width: 0.125rem;
+  height: 1.275rem;
+  margin: 0 0.688rem 0 0.938rem;
+  padding-top: 1.5%;
+  background-color: #484848;
+}
+
+.listLink1,
+.listLink2,
+.listLink3 {
+  color: blue;
+  text-decoration: none;
+}
+
+.listLink1:focus,
+.listLink2:focus,
+.listLink3:focus {
+  text-decoration: underline;
+}
+
+.container {
+  padding-left: 10%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.rocketlist {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rocketitem {
+  border: 1px solid rgba(230, 229, 229, 0.5);
+  gap: 20px;
+}
+
+.rocketright {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: initial;
+}
+
+.cancel {
+  background-color: blue;
+  color: white;
+  width: 20%;
+  height: 15%;
+  font-size: 15px;
+  border: none;
+  margin-top: 10px;
+}
+
+.reserve {
+  background-color: white;
+  border: 2px solid gray;
+  color: rgb(157, 155, 155);
+  width: 20%;
+  height: 15%;
+  margin-top: 20px;
+}
+
+.active {
+  display: block;
+  background-color: rgb(22, 157, 62);
+  color: white;
+  height: 20px;
+  margin-right: 5px;
+  align-content: center;
+}
+
+.inactive {
+  display: block;
+  background-color: rgb(231, 40, 27);
+  color: white;
+  height: 40px;
+  margin-right: 5px;
+  align-content: center;
+}
+
+.profilediv {
+  justify-content: space-between;
+}
+
+.tg-0lax {
+  border: 1px solid rgb(157, 155, 155);
+}
+
+.Joinmission {
+  border: 2px solid rgb(157, 155, 155);
+  width: 80%;
+  height: 30px;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.Leavemission {
+  color: rgb(233, 56, 56);
+  background-color: white;
+  width: 80%;
+  height: 30px;
+  font-size: 15px;
+  border: 1px solid rgb(233, 56, 56);
+  margin-left: 10px;
+}
+
+.tablename {
+  margin: 0;
+  font-weight: bold;
+  border: 1px solid rgb(157, 155, 155);
+  align-items: flex-start;
+  width: 15%;
+}
+
+.tabledescription {
+  width: 55%;
+  margin: 0;
+  border: 1px solid rgb(212, 211, 211);
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.tablespan {
+  padding-left: 40px;
+  border: 1px solid rgb(157, 155, 155);
+}
+
+.tablebutton {
+  margin: 0;
+  border: 1px solid rgb(157, 155, 155);
+  align-items: flex-start;
+}
+
+.Activemember {
+  background-color: rgb(25, 147, 181);
+  color: white;
+  font-weight: bold;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 13px;
+}
+
+.notamember {
+  background-color: rgb(122, 124, 128);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.resrockets {
+  width: 50%;
+}
+
+.joinedmissions {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.missionlist,
+.rocketlisted {
+  flex-direction: column;
+  border: 1px solid rgba(195, 197, 200, 0.7);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.profrocketitem,
+.profMissionitem {
+  border: 1px solid rgba(195, 197, 200, 0.7);
+  width: 100%;
 }
